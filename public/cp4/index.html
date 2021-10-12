@@ -1,0 +1,118 @@
+<html>
+  <title></title>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/assets/style.css" />
+  </head>
+  <body>
+    <div
+      class="menu d-flex flex-row justify-content-start align-items-center mt-2"
+    >
+      <p><img src="./assets/assets/_.png" alt="" /></p>
+      <p><img src="./assets/assets/logo 1.png" alt="" /></p>
+      <p class="title">ROCK PAPER SCISSORS</p>
+    </div>
+    
+    <div class="row">
+      <div class="offset-md-2 col-md-8">
+        <div class="row h-100">
+          <div
+            class="
+              col-4
+              d-flex
+              align-items-center
+              flex-column
+              justify-content-center
+              pb-5
+              mt-2
+            "
+          >
+            <p class="player">PLAYER 1</p>
+            <div id="playerBatu">
+              <img
+                onclick="playerOne('batu')"
+                class="imgBatu"
+                src="./assets/assets/batu.png"
+                alt=""
+              />
+            </div>
+            <div id="playerGunting">
+              <img
+                onclick="playerOne('gunting')"
+                class="imgGunting"
+                src="./assets/assets/gunting.png"
+                alt=""
+              />
+            </div>
+            <div id="playerKertas">
+              <img
+                onclick="playerOne('kertas')"
+                class="imgKertas"
+                src="./assets/assets/kertas.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="
+              col-4
+              d-flex
+              align-items-center
+              flex-column
+              justify-content-center
+              pb-5
+              mt-5
+            "
+          >
+            <p class="status" id="statusPlayer">VS</p>
+          </div>
+
+          <div
+            class="
+              col-4
+              d-flex
+              align-items-center
+              flex-column
+              justify-content-center
+              pb-5
+              mt-2
+            "
+          >
+            <p class="player">COMPUTER</p>
+            <div id="comBatu">
+              <img class="imgBatu" src="./assets/assets/batu.png" alt="" />
+            </div>
+
+            <div id="comGunting">
+              <img
+                class="imgGunting"
+                src="./assets/assets/gunting.png"
+                alt=""
+              />
+            </div>
+
+            <div id="comKertas">
+              <img class="imgKertas" src="./assets/assets/kertas.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row d-flex flex-column justify-content-center align-items-center"
+    >
+      <img
+        onclick="refreshAll()"
+        src="./assets/assets/refresh.png"
+        style="height: 80px; width: 100px; margin-top: -100px"
+        alt=""
+      />
+    </div>
+    <script src="./assets/assets/home.js"></script>
+  </body>
+</html>
